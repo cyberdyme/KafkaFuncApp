@@ -1,0 +1,292 @@
+<![CDATA[<mxfile host="app.diagrams.net" modified="2025-06-06T12:00:00.000Z" agent="5.0 (Windows)" etag="database-diagram-etag" version="21.3.7">
+  <diagram id="database-schema-diagram" name="Database Schema">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- SourceTargetMapping Table -->
+        <mxCell id="table1" value="SourceTargetMapping" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#4D4D4D;fontColor=#FFFFFF;strokeColor=#666666;fontSize=14;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="280" height="270" as="geometry" />
+        </mxCell>
+        
+        <!-- SourceTargetMapping Header Row -->
+        <mxCell id="table1-header" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="table1">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-header-key" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=#FFD966;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="table1-header">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-header-value" value="Id [bigint] IDENTITY(1,1)" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=1;" vertex="1" parent="table1-header">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- SourceTargetMapping Rows -->
+        <mxCell id="table1-row1" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row1-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row1">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row1-value" value="Mapping [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row1">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row2" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row2-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row2">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row2-value" value="SourceSystem [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row2">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row3" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row3-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row3">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row3-value" value="TargetSystem [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row3">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row4" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="150" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row4-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row4">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row4-value" value="FromValue [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row4">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row5" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="180" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row5-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row5">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row5-value" value="InstrumentType [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row5">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row6" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="210" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row6-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table1-row6">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row6-value" value="UpdatedBy [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row6">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table1-row7" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table1">
+          <mxGeometry y="240" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row7-key" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=#A9D18E;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="table1-row7">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table1-row7-value" value="ToValue_id [bigint]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table1-row7">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- MappingToValue Table -->
+        <mxCell id="table2" value="MappingToValue" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#4D4D4D;fontColor=#FFFFFF;strokeColor=#666666;fontSize=14;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="280" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- MappingToValue Header Row -->
+        <mxCell id="table2-header" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="table2">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-header-key" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=#FFD966;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="table2-header">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-header-value" value="ToValue_id [bigint]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=1;" vertex="1" parent="table2-header">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- MappingToValue Rows -->
+        <mxCell id="table2-row1" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table2">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-row1-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table2-row1">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-row1-value" value="Value [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table2-row1">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table2-row2" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table2">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-row2-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table2-row2">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table2-row2-value" value="SpecialType [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table2-row2">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- TempestToValue Table -->
+        <mxCell id="table3" value="TempestToValue" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#4D4D4D;fontColor=#FFFFFF;strokeColor=#666666;fontSize=14;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="280" height="390" as="geometry" />
+        </mxCell>
+        
+        <!-- TempestToValue Header Row -->
+        <mxCell id="table3-header" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="table3">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-header-key" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=#FFD966;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="table3-header">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-header-value" value="ToValue_id [bigint]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=1;" vertex="1" parent="table3-header">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- TempestToValue Rows -->
+        <mxCell id="table3-row1" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="60" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row1-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row1">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row1-value" value="FirstLeg [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row1">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row2" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="90" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row2-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row2">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row2-value" value="SecondLeg [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row2">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row3" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row3-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row3">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row3-value" value="Type [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row3">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row4" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="150" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row4-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row4">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row4-value" value="IsMini [bit]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row4">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row5" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="180" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row5-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row5">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row5-value" value="ContractUnit [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row5">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row6" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="210" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row6-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row6">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row6-value" value="ContractSize [int]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row6">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row7" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="240" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row7-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row7">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row7-value" value="IsPenultimate [bit]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row7">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row8" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="270" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row8-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row8">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row8-value" value="Periodicity [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row8">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row9" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="300" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row9-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row9">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row9-value" value="Nearby [int]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row9">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row10" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="330" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row10-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row10">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row10-value" value="SpreadPeriod [int]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row10">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="table3-row11" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="table3">
+          <mxGeometry y="360" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row11-key" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="table3-row11">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table3-row11-value" value="SettlementMethod [nvarchar(255)]" style="shape=partialRectangle;overflow=hidden;connectable=0;align=left;top=0;left=0;bottom=0;right=0;spacingLeft=6;" vertex="1" parent="table3-row11">
+          <mxGeometry x="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationship Arrows -->
+        <!-- SourceTargetMapping to MappingToValue -->
+        <mxCell id="relation1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#4D4D4D;" edge="1" parent="1" source="table1-row7" target="table2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="relation1-label" value="1:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="relation1">
+          <mxGeometry x="-0.3" y="15" relative="1" as="geometry">
+            <mxPoint x="-15" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- SourceTargetMapping to TempestToValue -->
+        <mxCell id="relation2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;strokeColor=#4D4D4D;" edge="1" parent="1" source="table1-row7" target="table3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="relation2-label" value="1:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="relation2">
+          <mxGeometry x="-0.3" y="15" relative="1" as="geometry">
+            <mxPoint x="15" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>]]>
+
