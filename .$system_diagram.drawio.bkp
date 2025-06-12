@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2025-06-12T12:00:00.000Z" agent="Mozilla/5.0" etag="" version="24.4.13" type="atlas">
+  <diagram id="system_diagram" name="Page-1">
+    <mxGraphModel dx="1434" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageEnabled="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Common Subsystem -->
+        <mxCell id="commonSubsystem" value="Common" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="coninicalTradeAbstract" value="&lt;u&gt;ConinicalTrade&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="commonSubsystem">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messageProcessorAbstract" value="&lt;u&gt;MessageProcessor&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=4;" vertex="1" parent="commonSubsystem">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Implementation Subsystems -->
+        <mxCell id="tempestSubsystem" value="Tempest" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="coninicalTempestTrade" value="ConinicalTempestTrade" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tempestSubsystem">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tempestMessageProcessor" value="TempestMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="tempestSubsystem">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cxlSubsystem" value="CXL" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cxlTempestTrade" value="CxlTempestTrade" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cxlSubsystem">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cxlMessageProcessor" value="CxlMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="cxlSubsystem">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="endurSubsystem" value="Endur" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="350" y="550" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="endurTempestTrade" value="EndurTempestTrade" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="endurSubsystem">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="endurMessageProcessor" value="EndurMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="endurSubsystem">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- MessageProcessor Run Method Details -->
+        <mxCell id="messageProcessorRunDetails" value="&lt;b&gt;MessageProcessor: run() method&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;ul&gt;&lt;li&gt;Consume messages (JSON to ConinicalTrade)&lt;/li&gt;&lt;li&gt;Perform validation&lt;/li&gt;&lt;li&gt;Using Reference information from Redis:&lt;ul&gt;&lt;li&gt;Identifier resolution&lt;/li&gt;&lt;li&gt;Fees&lt;/li&gt;&lt;li&gt;Broker&lt;/li&gt;&lt;li&gt;Trade Type&lt;/li&gt;&lt;li&gt;Contract Spec&lt;/li&gt;&lt;li&gt;Trader/Strategy resolution&lt;/li&gt;&lt;li&gt;Price&lt;/li&gt;&lt;li&gt;Special booking rules&lt;/li&gt;&lt;li&gt;Exclusions&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="650" y="50" width="250" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- Connections (Inheritance) -->
+        <mxCell id="edge_tempest_trade_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="coninicalTempestTrade" target="coninicalTradeAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_tempest_mp_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="tempestMessageProcessor" target="messageProcessorAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_cxl_trade_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="cxlTempestTrade" target="coninicalTradeAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_cxl_mp_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="cxlMessageProcessor" target="messageProcessorAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_endur_trade_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="endurTempestTrade" target="coninicalTradeAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_endur_mp_inherits" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="endurMessageProcessor" target="messageProcessorAbstract">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+

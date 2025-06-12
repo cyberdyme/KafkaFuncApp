@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2025-06-12T12:00:00.000Z" agent="Mozilla/5.0" etag="" version="24.4.13" type="atlas">
+  <diagram id="diagram_id" name="Page-1">
+    <mxGraphModel dx="1434" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageEnabled="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Components -->
+        <mxCell id="sourceSystem" value="Source System&lt;br&gt;(External Producer)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eventHub" value="Azure Event Hub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="messageProcessor" value="Message Processor&lt;br&gt;(Application Service / Azure Function / Background Worker)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="targetSystem" value="Target System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="150" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="holdingSystem" value="Holding System" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="400" width="160" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="edge1" value="Sends/Pushes Messages" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="sourceSystem" target="eventHub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="Pulls Messages (using Consumer Group)" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="eventHub" target="messageProcessor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="Successful Messages (Business Logic)" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.2;entryX=0;entryY=0.5;" edge="1" parent="1" source="messageProcessor" target="targetSystem">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="370" />
+              <mxPoint x="480" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="Errors / Held Trades" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="messageProcessor" target="holdingSystem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+

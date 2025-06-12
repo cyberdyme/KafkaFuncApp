@@ -1,0 +1,85 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram id="system_diagram" name="Page-1">
+    <mxGraphModel dx="2052" dy="1187" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="commonSubsystem" value="Common" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" parent="1" vertex="1">
+          <mxGeometry x="50" y="50" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="canonicalTradeAbstract" value="&lt;u&gt;CanonicalTrade&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=4;" parent="commonSubsystem" vertex="1">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messageProcessorAbstract" value="&lt;u&gt;MessageProcessor&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=4;" parent="commonSubsystem" vertex="1">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tempestSubsystem" value="Tempest" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" parent="1" vertex="1">
+          <mxGeometry x="350" y="50" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tempestTrade" value="TempestTrade" style="rounded=0;whiteSpace=wrap;html=1;" parent="tempestSubsystem" vertex="1">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tempestMessageProcessor" value="TempestMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" parent="tempestSubsystem" vertex="1">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cxlSubsystem" value="CXL" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" parent="1" vertex="1">
+          <mxGeometry x="350" y="300" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cxlTrade" value="CxlTrade" style="rounded=0;whiteSpace=wrap;html=1;" parent="cxlSubsystem" vertex="1">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cxlMessageProcessor" value="CxlMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" parent="cxlSubsystem" vertex="1">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="endurSubsystem" value="Endur" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;" parent="1" vertex="1">
+          <mxGeometry x="350" y="550" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="endurTrade" value="EndurTrade" style="rounded=0;whiteSpace=wrap;html=1;" parent="endurSubsystem" vertex="1">
+          <mxGeometry x="50" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="endurMessageProcessor" value="EndurMessageProcessor" style="rounded=0;whiteSpace=wrap;html=1;" parent="endurSubsystem" vertex="1">
+          <mxGeometry x="50" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="messageProcessorRunDetails" value="&lt;b&gt;MessageProcessor: executeAsync() method&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;ul&gt;&lt;li&gt;Consume messages (JSON to Canonical Trade)&lt;/li&gt;&lt;li&gt;Perform validation&lt;/li&gt;&lt;li&gt;Using Reference information from Redis:&lt;ul&gt;&lt;li&gt;Identifier resolution&lt;/li&gt;&lt;li&gt;Fees&lt;/li&gt;&lt;li&gt;Broker&lt;/li&gt;&lt;li&gt;Trade Type&lt;/li&gt;&lt;li&gt;Contract Spec&lt;/li&gt;&lt;li&gt;Trader/Strategy resolution&lt;/li&gt;&lt;li&gt;Price&lt;/li&gt;&lt;li&gt;Special booking rules&lt;/li&gt;&lt;li&gt;Exclusions&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;" parent="1" vertex="1">
+          <mxGeometry x="650" y="50" width="380" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="91LNZipnc5xl1-34rWn0-1" value="" style="endArrow=oval;html=1;rounded=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;edgeStyle=orthogonalEdgeStyle;endFill=1;" parent="1" source="endurMessageProcessor" target="messageProcessorAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="590" as="sourcePoint" />
+            <mxPoint x="190" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91LNZipnc5xl1-34rWn0-2" value="" style="endArrow=oval;html=1;rounded=1;entryX=0.382;entryY=0.992;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;dashed=1;edgeStyle=orthogonalEdgeStyle;endFill=1;" parent="1" target="messageProcessorAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="460" as="sourcePoint" />
+            <mxPoint x="175" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91LNZipnc5xl1-34rWn0-5" value="" style="endArrow=oval;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;dashed=1;endFill=1;" parent="1" source="tempestMessageProcessor" target="messageProcessorAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="570" as="sourcePoint" />
+            <mxPoint x="880" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hbn6w5fkivth5cUb-xDe-1" value="" style="endArrow=block;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;endFill=0;dashed=1;dashPattern=1 2;" parent="1" target="canonicalTradeAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="150" as="sourcePoint" />
+            <mxPoint x="880" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hbn6w5fkivth5cUb-xDe-2" value="" style="endArrow=block;html=1;rounded=0;entryX=0.898;entryY=1.025;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;entryPerimeter=0;endFill=0;dashed=1;dashPattern=1 2;" parent="1" source="cxlTrade" target="canonicalTradeAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="550" as="sourcePoint" />
+            <mxPoint x="910" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hbn6w5fkivth5cUb-xDe-3" value="" style="endArrow=block;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;dashPattern=1 1;" parent="1" source="endurTrade" target="canonicalTradeAbstract" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1100" y="700" as="sourcePoint" />
+            <mxPoint x="1150" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
